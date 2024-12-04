@@ -1,23 +1,28 @@
 import { Link, NavLink } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
+
 
 const Navbar = () => {
+
+
   const navLink = (
     <>
-      <NavLink to='/'>
+      <NavLink to="/">
         <li>Home</li>
       </NavLink>
-      <NavLink >
+      <HashLink smooth to='/#about'>
         <li>About</li>
-      </NavLink>
-      <NavLink >
+      </HashLink>
+      <HashLink smooth to='/#skills'>
         <li>Skills</li>
-      </NavLink>
-      <NavLink to='/projects'>
+      </HashLink>
+      <HashLink smooth to='/#projects'>
         <li>Project's</li>
-      </NavLink>
-      <NavLink to='/contact'>
+      </HashLink>
+      <NavLink to="/contact">
         <li>Contact Me</li>
       </NavLink>
+      
     </>
   );
   return (
@@ -48,14 +53,15 @@ const Navbar = () => {
               {navLink}
             </ul>
           </div>
-          <Link to='/' className="px-5 text-white text-xl">RAHI</Link>
+          <Link to="/" className="px-5 text-white text-xl">
+            RAHI
+          </Link>
         </div>
         <div className="navbar-end hidden lg:flex mx-5">
           <ul className="menu menu-horizontal px-1 gap-4 text-white font-semibold">
             {navLink}
           </ul>
         </div>
-        
       </div>
     </>
   );

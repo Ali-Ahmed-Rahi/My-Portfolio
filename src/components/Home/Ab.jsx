@@ -2,7 +2,7 @@ import { FaArrowRightLong } from "react-icons/fa6";
 
 const Ab = () => {
   return (
-    <div className=" mt-10 p-4">
+    <div id="about" className=" mt-10 p-4">
       <div className="text-center">
         <h2 data-aos="flip-down" className="text-4xl font-semibold text-white border-b-2 border-gray-300 inline-block">
           Get To Know Me

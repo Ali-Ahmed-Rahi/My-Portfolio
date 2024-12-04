@@ -11,7 +11,7 @@ import img11 from "../../assets/skill/github.png";
 
 const Skills = () => {
   return (
-    <div className="mt-10 p-4  ">
+    <div id="skills" className="mt-10 p-4  ">
       <div className="flex items-center justify-center ">
         <div className="flex-grow border-t border-white"></div>
         <span data-aos="flip-down" className="mx-4 text-white font-bold text-4xl">Gain Skills</span>

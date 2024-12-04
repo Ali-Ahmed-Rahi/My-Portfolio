@@ -27,7 +27,7 @@ const Project = () => {
   ];
 
   return (
-    <div className="mt-10 p-4">
+    <div id="projects" className="mt-10 p-4">
       <div className="flex items-center justify-center">
         <div className="flex-grow border-t border-white"></div>
         <span
