@@ -22,7 +22,7 @@ const ContactMe = () => {
         <div data-aos="zoom-in-up" className="bg-black  mt-3 lg:w-1/3 border">
           <div className="text-center py-5 lg:py-20 px-8">
           <MdEmail className="mx-auto text-3xl lg:text-5xl" />
-            <h2 className=" lg:text-2xl font-medium mt-5">Talk To Our Team</h2>
+            <h2 className=" lg:text-2xl font-medium mt-5">Talk To Me</h2>
             <p className="lg:text-xl mt-5">
               If you Intersted In My Project & Experience?<br /> Just Pickup  Your Phone to
               Chat With Me.

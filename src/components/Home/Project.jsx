@@ -57,7 +57,7 @@ const Project = () => {
         </div>
       </div>
       <div data-aos="flip-down" className="text-center mt-10">
-        <button className="btn w-60 rounded-full bg-white text-black">Show More</button>
+        <button className="btn w-60 rounded-full bg-white hover:bg-slate-400 text-black">Show More</button>
       </div>
     </div>
   );
