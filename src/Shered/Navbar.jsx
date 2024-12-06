@@ -10,14 +10,14 @@ const Navbar = () => {
       <NavLink to="/">
         <li>Home</li>
       </NavLink>
-      <HashLink smooth to='/#about'>
+      <NavLink to='/about'>
         <li>About</li>
-      </HashLink>
+      </NavLink>
       <HashLink smooth to='/#skills'>
         <li>Skills</li>
       </HashLink>
       <HashLink smooth to='/#projects'>
-        <li>Project's</li>
+        <li>Project&apos;s</li>
       </HashLink>
       <NavLink to="/contact">
         <li>Contact Me</li>

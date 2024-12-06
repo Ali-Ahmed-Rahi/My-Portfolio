@@ -1,20 +1,29 @@
 
 import { FaPhoneAlt } from 'react-icons/fa';
+import { IoArrowBackCircleOutline } from 'react-icons/io5';
 import { MdEmail } from 'react-icons/md';
+import { HashLink } from 'react-router-hash-link';
 
 const ContactMe = () => {
   return (
-    <div className="mt-16 lg:mt-8 text-black">
+    <div className='mt-8'>
+      <div className='mb-5'>
+      <HashLink smooth to='/' className="text-4xl text-white">
+        <IoArrowBackCircleOutline />
+        </HashLink>
+      </div>
+      <div className=" text-black">
+      
       <div
         data-aos="zoom-in-up"
         className="text-center h-64 lg:h-96 py-16 lg:py-8 bg-black text-white border  "
       >
         <h2 data-aos="zoom-in-up" className="text-3xl lg:text-5xl font-bold">
-          Contact Us
+          Contact Me
         </h2>
         <p data-aos="zoom-in-up" className="font-medium lg:text-2xl mt-4">
-          we had love to hear from you,here is
-          <br /> how you can reach us
+        I would love to hear from you, here is
+        <br />how you can reach me
         </p>
       </div>
 
@@ -48,6 +57,7 @@ const ContactMe = () => {
         </div>
       </div>
       
+    </div>
     </div>
   );
 };

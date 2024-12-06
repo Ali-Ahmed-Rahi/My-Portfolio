@@ -37,6 +37,12 @@ const Skills = () => {
             src={img3}
             alt=""
           />
+          <img
+            data-aos="fade-down"
+            className="border w-40 h-40 p-10 hover:bg-white rounded-lg lg:hidden" // for screen only this one is hidden for lg
+            src={img5}
+            alt=""
+          />
         </div>
       </div>
       <div className="flex justify-center mt-10">

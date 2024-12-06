@@ -1,6 +1,7 @@
 import img1 from "../../assets/Project/Screenshot 2024-12-04 200903.png";
 import img2 from "../../assets/Project/Screenshot 2024-12-04 200550.png";
 import img3 from "../../assets/Project/Screenshot 2024-12-04 200432.png";
+import { FaArrowRightLong } from "react-icons/fa6";
 
 const Project = () => {
   const projectData = [
@@ -48,7 +49,7 @@ const Project = () => {
               </figure>
               <div className="p-10">
                 <h2 data-aos="zoom-up" className="text-center text-2xl font-bold">
-                  {project.title}
+                  {project.title} 
                 </h2>
                 <p data-aos="zoom-up">{project.description}</p>
               </div>
@@ -57,7 +58,7 @@ const Project = () => {
         </div>
       </div>
       <div data-aos="flip-down" className="text-center mt-10">
-        <button className="btn w-60 rounded-full bg-white hover:bg-slate-400 text-black">Show More</button>
+        <button className="btn w-60 rounded-full bg-white hover:bg-slate-400 text-black">Show More <FaArrowRightLong /></button>
       </div>
     </div>
   );

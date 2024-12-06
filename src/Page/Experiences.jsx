@@ -1,9 +1,14 @@
+import { IoArrowBackCircleOutline } from "react-icons/io5";
+import { HashLink } from "react-router-hash-link";
 
 
 const Experiences = () => {
   return (
     <>
       <div data-aos="zoom-in" className=" p-4">
+        <HashLink smooth to='/#experience' className="text-4xl text-white">
+        <IoArrowBackCircleOutline />
+        </HashLink>
         <div className="flex items-center justify-center ">
           <div className="flex-grow border-t border-white"></div>
           <span className="mx-4 text-white font-bold text-4xl">

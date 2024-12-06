@@ -15,7 +15,7 @@ const Experience = () => {
   
   return (
     <>
-      <div className="mt-8 p-4 ">
+      <div id="experience" className="mt-8 p-4 ">
         <div className="flex items-center justify-center ">
           <div className="flex-grow border-t border-white"></div>
           <span data-aos="flip-down" className="mx-4 text-white font-bold text-4xl">Experiences</span>
