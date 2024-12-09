@@ -40,7 +40,7 @@ const Banner = () => {
       </div>
       <div className="lg:w-1/3 flex justify-center mx-auto order-1 lg:order-2 ">
         <img
-          className="w-36 lg:w-96 rounded-full"
+          className="w-52 lg:w-96 rounded-full"
           src={img}
           alt="Ali Ahmed Rahi"
         />
