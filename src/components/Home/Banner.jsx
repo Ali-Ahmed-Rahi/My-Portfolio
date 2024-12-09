@@ -1,5 +1,5 @@
 
-import img from "../../assets/20240819_192240-removebg-preview (1).png";
+import img from "../../assets/image/Image_20241209_185356541[1].jpg";
 import { RxReader } from "react-icons/rx";
 import { MdOutlineSimCardDownload } from "react-icons/md";
 
