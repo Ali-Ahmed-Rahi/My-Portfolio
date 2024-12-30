@@ -1,17 +1,10 @@
-import Aos from "aos";
-import "aos/dist/aos.css";
-import { useEffect } from "react";
+
 import { FaArrowRightLong } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 
 const Experience = () => {
 
-  useEffect(() => {
-    Aos.init({
-      duration: 800, 
-      once: true, 
-    });
-  }, []);
+ 
   
   return (
     <>
@@ -92,7 +85,7 @@ const Experience = () => {
           </div>
         </div>
         <div data-aos="flip-down" className="text-center">
-          <Link to='/exp' className="btn rounded-full bg-white text-black mt-5 hover:bg-slate-400">
+          <Link to='/singlepage/exp' className="btn rounded-full bg-white text-black mt-5 hover:bg-slate-400">
             Show more <FaArrowRightLong />
           </Link>
         </div>

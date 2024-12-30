@@ -51,7 +51,7 @@ const Ab = () => {
             <SlBadge className="text-4xl hidden sm:block" />
             <div>
               <h2 className="text-xl font-semibold">
-                Bachelor in Business Administration <span className="text-green-500">( Running )</span>
+                Bachelor in Business Administration
               </h2>
               <h3 className="font-semibold">BeaniBazer Govt Collage</h3>
               <p >2024</p>

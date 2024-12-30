@@ -2,8 +2,17 @@ import img1 from "../../assets/Project/Screenshot 2024-12-04 200903.png";
 import img2 from "../../assets/Project/Screenshot 2024-12-04 200550.png";
 import img3 from "../../assets/Project/Screenshot 2024-12-04 200432.png";
 import { FaArrowRightLong } from "react-icons/fa6";
+import { useEffect } from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const Project = () => {
+  useEffect(() => {
+      Aos.init({
+        duration: 800, 
+        once: true, 
+      });
+    }, []);
   const projectData = [
     {
       title: "ByteBlaze",

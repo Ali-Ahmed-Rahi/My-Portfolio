@@ -5,19 +5,19 @@ import { HashLink } from "react-router-hash-link";
 const Experiences = () => {
   return (
     <>
-      <div data-aos="zoom-in" className=" p-4">
+      <div  className=" p-4 bg-black">
         <HashLink smooth to='/#experience' className="text-4xl text-white">
         <IoArrowBackCircleOutline />
         </HashLink>
-        <div className="flex items-center justify-center ">
+        <div  className="flex items-center justify-center ">
           <div className="flex-grow border-t border-white"></div>
-          <span className="mx-4 text-white font-bold text-4xl">
+          <span data-aos="zoom-in" className="mx-4 text-white font-bold text-4xl">
             Experiences
           </span>
           <div className="flex-grow border-t border-white"></div>
         </div>
         <div className="mt-8 grid lg:grid-cols-3">
-          <div className="container flex flex-col w-full max-w-lg p-6 mx-auto divide-y rounded-md border text-white mb-5">
+          <div data-aos="zoom-in" className="container flex flex-col w-full max-w-lg p-6 mx-auto divide-y rounded-md border text-white mb-5">
             <div className="flex justify-between p-4">
               <div className="flex space-x-4">
                 <div>
@@ -49,7 +49,7 @@ const Experiences = () => {
             </div>
           </div>
           {/*  */}
-          <div className="container flex flex-col w-full max-w-lg p-6 mx-auto divide-y rounded-md border text-white mt-4 mb-5 lg:mt-0">
+          <div data-aos="zoom-in" className="container flex flex-col w-full max-w-lg p-6 mx-auto divide-y rounded-md border text-white mt-4 mb-5 lg:mt-0">
             <div className="flex justify-between p-4">
               <div className="flex space-x-4">
                 <div>
@@ -86,7 +86,7 @@ const Experiences = () => {
             </div>
           </div>
           {/*  */}
-          <div className="container flex flex-col w-full max-w-lg p-6 mx-auto divide-y rounded-md border text-white mb-5 mt-4 lg:mt-0">
+          <div data-aos="zoom-in" className="container flex flex-col w-full max-w-lg p-6 mx-auto divide-y rounded-md border text-white mb-5 mt-4 lg:mt-0">
             <div className="flex justify-between p-4">
               <div className="flex space-x-4">
                 <div>
@@ -123,7 +123,7 @@ const Experiences = () => {
             </div>
           </div>
           {/*  */}
-          <div className="container flex flex-col w-full max-w-lg p-6 mx-auto divide-y rounded-md border text-white mb-5 mt-4 lg:mt-0">
+          <div data-aos="zoom-in" className="container flex flex-col w-full max-w-lg p-6 mx-auto divide-y rounded-md border text-white mb-5 mt-4 lg:mt-0">
             <div className="flex justify-between p-4">
               <div className="flex space-x-4">
                 <div>
@@ -160,7 +160,7 @@ const Experiences = () => {
             </div>
           </div>
           {/*  */}
-          <div className="container flex flex-col w-full max-w-lg p-6 mx-auto divide-y rounded-md border text-white mt-4 lg:mt-0">
+          <div data-aos="zoom-in" className="container flex flex-col w-full max-w-lg p-6 mx-auto divide-y rounded-md border text-white mt-4 lg:mt-0">
             <div className="flex justify-between p-4">
               <div className="flex space-x-4">
                 <div>
@@ -197,7 +197,7 @@ const Experiences = () => {
             </div>
           </div>
           {/*  */}
-          <div className="container flex flex-col w-full max-w-lg p-6 mx-auto divide-y rounded-md border text-white mt-4 lg:mt-0">
+          <div data-aos="zoom-in" className="container flex flex-col w-full max-w-lg p-6 mx-auto divide-y rounded-md border text-white mt-4 lg:mt-0">
             <div className="flex justify-between p-4">
               <div className="flex space-x-4">
                 <div>

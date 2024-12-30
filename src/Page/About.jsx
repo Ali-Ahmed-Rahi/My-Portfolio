@@ -1,12 +1,8 @@
-import { IoArrowBackCircleOutline } from "react-icons/io5";
-import { HashLink } from "react-router-hash-link";
 
 const About = () => {
   return (
     <div>
-      <HashLink smooth to='/#about' className="text-4xl text-white">
-        <IoArrowBackCircleOutline />
-        </HashLink>
+      
       <div className="flex items-center justify-center ">
         <div className="flex-grow border-t border-white"></div>
         <span

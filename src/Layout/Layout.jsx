@@ -8,9 +8,9 @@ const Layout = () => {
       <div className="bg-black min-h-screen">
         <Navbar></Navbar>
         <div className="min-h-screen">
-        <Outlet></Outlet>
+          <Outlet></Outlet>
         </div>
-        <Footer></Footer> 
+        <Footer></Footer>
       </div>
     </>
   );
