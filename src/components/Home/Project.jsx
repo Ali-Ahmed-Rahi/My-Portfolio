@@ -59,8 +59,8 @@ const Project = () => {
                     />
                   ))}
                 </ul>
-                <div className="mt-5 ">
-                  <a href={project.LiveDemo} target="_blank" rel="noopener noreferrer" className="btn w-full bg-white text-black rounded-full hover:bg-green-500"> Live Demo</a>
+                <div className="mt-5">
+                  <a href={project.LiveDemo} target="_blank" rel="noopener noreferrer" className="btn  w-full bg-white text-black rounded-full hover:bg-green-500"> Live Demo</a>
                 </div>
               </div>
             </div>
