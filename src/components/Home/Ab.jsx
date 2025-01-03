@@ -1,10 +1,19 @@
 // import { FaArrowRightLong } from "react-icons/fa6";
 
+import Aos from "aos";
+import { useEffect } from "react";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { SlBadge } from "react-icons/sl";
 import { Link } from "react-router-dom";
+import "aos/dist/aos.css";
 
 const Ab = () => {
+  useEffect(() => {
+    Aos.init({
+      duration: 800, 
+      once: true, 
+    });
+  }, []);
   return (
     <div id="about" className="p-4 ">
       <div className="grid lg:grid-cols-2 w-full gap-5 lg:gap-0">

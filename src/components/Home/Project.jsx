@@ -1,40 +1,22 @@
-import img1 from "../../assets/Project/Screenshot 2024-12-04 200903.png";
-import img2 from "../../assets/Project/Screenshot 2024-12-04 200550.png";
-import img3 from "../../assets/Project/Screenshot 2024-12-04 200432.png";
+
+import { useEffect, useState } from "react";
 import { FaArrowRightLong } from "react-icons/fa6";
-import { useEffect } from "react";
-import Aos from "aos";
-import "aos/dist/aos.css";
+
 
 const Project = () => {
+  const [data, SetData] = useState([]);
+
   useEffect(() => {
-      Aos.init({
-        duration: 800, 
-        once: true, 
-      });
-    }, []);
-  const projectData = [
-    {
-      title: "ByteBlaze",
-      description:
-        "This project focuses on building a dynamic, responsive website with HTML, CSS, and JavaScript. The goal was to create a seamless user experience across all devices.",
-      imageLink: img1,
-    },
-    {
-      title: "The Vine Bistro",
-      description:
-        "This project showcases my skills in full-stack development, using Node.js, Express.js, and MongoDB to build a RESTful API. It includes features like user authentication and data storage.",
-
-      imageLink: img2,
-    },
-    {
-      title: "PothChola Foundation",
-      description:
-        "In this project, I developed an Foundation using React  for state management. It includes features like payment system integration etc.",
-
-      imageLink: img3,
-    },
-  ];
+    fetch("/project.json")
+      .then((res) => res.json())
+      .then((data) => SetData(data));
+  }, []);
+  // console.log(data);
+  if (!data) {
+    return <div className="text-8xl font-bold flex justify-center items-center text-green-500">
+      404
+    </div>
+  }
 
   return (
     <div id="projects" className="mt-10 p-4">
@@ -51,23 +33,44 @@ const Project = () => {
 
       <div className="flex justify-center items-center">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
-          {projectData.map((project, index) => (
+          {data.map((project, index) => (
             <div key={index} className="border rounded-t-lg text-white">
               <figure>
-                <img data-aos="zoom-in" src={project.imageLink} alt={project.title} />
+                <img data-aos="zoom-in " className="rounded-lg" src={project.image} alt="Image" />
               </figure>
               <div className="p-10">
-                <h2 data-aos="zoom-up" className="text-center text-2xl font-bold">
-                  {project.title} 
+                <h2
+                  data-aos="zoom-up"
+                  className="text-center text-2xl font-bold"
+                >
+                  {project.title}
                 </h2>
-                <p data-aos="zoom-up">{project.description}</p>
+                <ul className="list-disc">
+                  {project.content.map((list, i) => (
+                    <li
+                      className="mt-5 "
+                      key={i} // Use a unique key for each list item
+                      dangerouslySetInnerHTML={{
+                        __html: list
+                        .replace(/\*\*(.*?)\*\*/g, '<span class="font-bold">$1</span>')
+                        .replace(/\*\*(.*?)\*\*/g, '<span class="font-extrabold">$1</span>')
+                        ,
+                      }}
+                    />
+                  ))}
+                </ul>
+                <div className="mt-5 ">
+                  <a href={project.LiveDemo} target="_blank" rel="noopener noreferrer" className="btn w-full bg-white text-black rounded-full hover:bg-green-500"> Live Demo</a>
+                </div>
               </div>
             </div>
           ))}
         </div>
       </div>
       <div data-aos="flip-down" className="text-center mt-10">
-        <button className="btn w-60 rounded-full bg-white hover:bg-slate-400 text-black">Show More <FaArrowRightLong /></button>
+        <button className="btn w-60 rounded-full bg-white hover:bg-slate-400 text-black">
+          Show More <FaArrowRightLong />
+        </button>
       </div>
     </div>
   );

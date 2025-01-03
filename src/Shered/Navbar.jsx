@@ -53,8 +53,8 @@ const Navbar = () => {
               {navLink}
             </ul>
           </div>
-          <Link to="/" className="px-5 text-white text-xl">
-            RAHI
+          <Link to="/" className="px-5 text-white text-xl uppercase">
+          Portfolio
           </Link>
         </div>
         <div className="navbar-end hidden lg:flex mx-5">

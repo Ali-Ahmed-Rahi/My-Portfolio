@@ -67,7 +67,7 @@ const Skills = () => {
           />
           <img
             data-aos="fade-down"
-            className="border w-40 h-40 p-10 hover:border-slate-600 hover:border-4 rounded-lg"
+            className="border w-40 h-40 p-10  hover:border-4 rounded-lg"
             src={img7}
             alt=""
           />
@@ -111,7 +111,7 @@ const Skills = () => {
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-5 lg:gap-52 ">
           <img
             data-aos="fade-down"
-            className="border w-40 h-40 p-10 hover:border-slate-600 hover:border-4 rounded-lg"
+            className="border w-40 h-40 p-10  hover:border-4 rounded-lg"
             src={img12}
             alt=""
           />
@@ -123,7 +123,7 @@ const Skills = () => {
           />
           <img
             data-aos="fade-down"
-            className="border w-40 h-40 p-10 hover:border-slate-600 hover:border-4 rounded-lg"
+            className="border w-40 h-40 p-10  hover:border-4 rounded-lg"
             src={img14}
             alt=""
           />
