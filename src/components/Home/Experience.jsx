@@ -50,8 +50,8 @@ const Experience = () => {
           {/*  */}
           
         </div>
-        <div data-aos="flip-down" className="text-center">
-          <Link to='/singlepage/exp' className="btn rounded-full bg-white text-black mt-5 hover:bg-slate-400">
+        <div data-aos="flip-down" className="text-center ">
+          <Link  className="btn disabled rounded-full bg-white text-black mt-5 hover:bg-slate-400">
             Show more <FaArrowRightLong />
           </Link>
         </div>

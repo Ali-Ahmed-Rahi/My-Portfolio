@@ -6,8 +6,7 @@ import Project from "../components/Home/Project";
 import Skills from "../components/Home/Skills";
 import Experience from "../components/Home/Experience";
 import About from "../Page/About";
-import Experiences from "../Page/Experiences";
-import SinglePage from "../Layout/SinglePage";
+
 
 export const router = createBrowserRouter([
   {
@@ -41,14 +40,5 @@ export const router = createBrowserRouter([
       
     ],
   },
-  {
-    path:'/singlepage',
-    element:<SinglePage></SinglePage>,
-    children:[
-      {
-        path:'/singlepage/exp',
-        element:<Experiences></Experiences>
-      }
-    ]
-  }
+ 
 ]);
